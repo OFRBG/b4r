@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "",
+  "display": "b4r",
   "extends": "@tsconfig/esm/tsconfig.json",
   "compilerOptions": {
     "lib": ["DOM", "ES2015"],

@@ -1,16 +1,16 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "",
-  "version": "0.0.0",
-  "description": "",
+  "name": "b4r",
+  "version": "0.0.1",
+  "description": "config files go brrrr",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/OFRBG/b4r.git"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/OFRBG/b4r/issues"
   },
-  "author": "",
+  "author": "Oscar Fonseca <oscar.fonseca@formidable.com>",
   "license": "MIT",
   "type": "module",
   "publishConfig": {
