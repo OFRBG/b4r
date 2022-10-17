@@ -23,7 +23,7 @@
 ## About The Project
 
 <blockquote>
-  ⚠️
+  ⚠️ This project is as stable as an inverted two-link pendulum.
 </blockquote>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -44,7 +44,7 @@
 ### Installation
 
 ```sh
-pnpm add
+pnpm add -D b4r
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>

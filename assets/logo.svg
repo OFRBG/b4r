@@ -1,2 +1,16 @@
-<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 500 500"
+    xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style data-bx-fonts="Roboto Mono">
+        @font-face {
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(data:font/woff2;base64,d09GMgABAAAAAAOoAA0AAAAABngAAANSAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHDQGYD9TVEFURABMEQgKglCCKwsMAAE2AiQDDAQgBYRsByAbaAXIBB7676w/t5EB1Esq0Lin18qsoSRb+wV+8oE9cE79m6QBcBH5iKIulFsV3m5+cPkwdnmRbQggnLrsC6V9x+79ybZN1PNId+mOXNLzxhgFpENIRZNNMwpQHkuXUHvUDWo9EDlaSX6OUyqVCRPb3iKZsWjDMKklH3Tq1asTGlHmf6HW//zgQKhVqqYhtvYSMKU0VY81oYQhhtIPlehYyifHu9zGPM96jDF5IgKBQuyyXyFipUuAjEAScRAugjpRcnewGPRCCo03Cg7bLaFREyv6drCox3xnBsxt5nKE6LiAKdMkhlEqZMIPg3AyZkkDTmlKStzfVl5LjpwsZgYGHgk0vRII971qvOtSZTVyYsSg/ZcrnPdHlAZbPQ0OOhm0MuNV5qZXlXfdC/cFqu45ki5vPJpyMBhRer/KeX/WZv9k36v+6QMjQ6PUo8FmF4MRpf4Ow84EbDP8EaVBMTMQ7nvV4UZ8krXswXLtvc06d3lulOtYb2Bi+82BhpWTsfB3pK72H7nYmd2qg172WdmunuTWXZN8SdakqpYeRZsqdvw06niFam0TZvX8eu7orN6PDnTLqFth2eiqZVvvmxXSiyb2nvln3W2GpYSvk5sm+2o0aTc3fmB8w/p6ZF7lxDBvLLu39XC5hgx2O3v2dHqGDnN4WT3VeO8s8jnHTW3AqJjmv4VGhB5K8ta3uJre2zevWx38V/3Pb+kUakUQdlLQqcG3Yq/y+F/1/3mWTmcA6iGhPPZKK0WO2FPRqHKcZObDCc3gEzcjWROQym2MnBJlFa8gWUR6JUKF4pWpzzOvgsaxmEr6EF4L2UzwRNOf8qSYhklF1ghn5Ers0B+KOCKBnhSik88Y8uiC4QV7sDEIR8mFG8NqNCiiKbWYfXyhJmMogq023DioOUDERa2OjQ4KKMGBjteiO11oRwd60o87XoO61KQ2fSnECq2GtYe1wKhBW3g+DzsDcaBTgqcwpFGv+abaXTiNc2sjjX6lGZ3oRS860Wwi1JthWKIdrBUxEf0ozmvUpTZ1aIBG/63vpi3J6I2OS14c2DqF2jD2MMGjqpWgUflgmRIu5MJTWRiLlZowVEh+QaGQQlww5MA5MGXIq/qUTD6jqvwzgJAzvdj/n1EdAAAA) format('woff2');
+        }
+        </style>
+    </defs>
+    <rect width="100%" height="100%" color="white"></rect>
+    <text style="fill: rgb(51, 51, 51); font-family: &quot;Roboto Mono&quot;; font-size: 150px; font-weight: 700; letter-spacing: -14px; text-anchor: middle; white-space: pre;" x="230" y="440">.brrrr</text>
 </svg>
