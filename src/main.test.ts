@@ -5,17 +5,14 @@ describe('main', () => {
     vi.clearAllMocks()
   })
 
-  it('has a config interface', () => {
-    expect(main()).toMatchObject({ prettier: {} })
-  })
-
   it('has prettier config keys', () => {
-    const { prettier } = main()
+    const { prettier } = main
 
     prettier.arrowParens = 'always'
     prettier.bracketSameLine = true
 
     expect(prettier).toEqual({
+      $schema: expect.any(String),
       arrowParens: 'always',
       bracketSameLine: true,
     })

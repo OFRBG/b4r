@@ -27,7 +27,6 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "b4r": "node ./dist/cli.cjs",
-    "postinstall": "pnpm b4r",
     "build-fast": "tsup",
     "build": "pnpm build-fast --dts-resolve",
     "test": "vitest",
