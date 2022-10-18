@@ -9,5 +9,5 @@
     "allowSyntheticDefaultImports": true,
     "types": ["vitest/globals"]
   },
-  "include": ["src"]
+  "include": ["src", ".brrrr.ts"]
 }
