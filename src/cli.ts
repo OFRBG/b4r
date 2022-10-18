@@ -1,13 +1,43 @@
 #!/usr/bin/env node
 
-import path from 'path'
+import path, { format } from 'path'
 import JoyCon from 'joycon'
 import fs from 'fs-extra'
 import { cac } from 'cac'
 import { bundleRequire } from 'bundle-require'
+import kebab from 'lodash/kebabCase'
+import identity from 'lodash/identity'
+import mapKeys from 'lodash/mapKeys'
 
 const canonicalFilenames = {
   prettier: '.prettierrc',
+  npm: '.npmrc',
+}
+
+const fileFormat = {
+  prettier: 'json',
+  npm: 'key-value',
+}
+
+const keyTransform = {
+  prettier: identity,
+  npm: kebab,
+}
+
+const formatConfig = (configName, config) => {
+  const mappedConfig = mapKeys(config, (_, key) =>
+    keyTransform[configName](key)
+  )
+
+  switch (fileFormat[configName]) {
+    case 'key-value':
+      return Object.entries(mappedConfig)
+        .map(([key, value]) => `${key}=${value}`)
+        .join('\n')
+    case 'json':
+    default:
+      return JSON.stringify(mappedConfig, null, 2)
+  }
 }
 
 async function generate() {
@@ -35,8 +65,9 @@ async function generate() {
 
   for (let [configName, config] of Object.entries(resolvedConfig.data)) {
     const filename = canonicalFilenames[configName]
+    const formattedConfig = formatConfig(configName, config)
 
-    jobs.push(fs.writeJson(path.resolve(outPath, filename), config))
+    jobs.push(fs.writeFile(path.resolve(outPath, filename), formattedConfig))
   }
 
   await Promise.all(jobs)

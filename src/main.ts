@@ -1,38 +1,44 @@
-import type { Config } from 'prettier'
+import type { Config } from "prettier";
 
-type Prettier = Config
+type Prettier = Config;
+
+type Npm = {
+  gitChecks?: boolean;
+};
 
 type Brrrr = {
-  prettier: Prettier
-}
+  prettier: Prettier;
+  npm: Npm;
+};
 
 const defaultValues = {
   prettier: {
-    $schema: 'https://json.schemastore.org/prettierrc',
+    $schema: "https://json.schemastore.org/prettierrc",
   },
-}
+  npm: {},
+};
 
-const inner = {}
+const inner = {};
 
 export const main = new Proxy<Brrrr>(inner as Brrrr, {
   get: (target, p) => {
     if (!target[p]) {
-      target[p] = defaultValues[p]
+      target[p] = defaultValues[p];
     }
 
-    return target[p]
+    return target[p];
   },
   set: (target, p, newValue) => {
     if (!target[p]) {
-      target[p] = {}
+      target[p] = {};
     }
 
     try {
-      target[p] = newValue
+      target[p] = newValue;
     } catch {
-      return false
+      return false;
     }
 
-    return true
+    return true;
   },
-})
+});

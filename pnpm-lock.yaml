@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@tsconfig/esm': ^1.0.0
   '@types/fs-extra': ^9.0.13
+  '@types/lodash': ^4.14.186
   '@types/node': ^18.11.0
   '@types/prettier': ^2.7.1
   '@types/rc': ^1.2.1
@@ -12,6 +13,7 @@ specifiers:
   esbuild: ^0.15.11
   fs-extra: ^10.1.0
   joycon: ^3.1.1
+  lodash: ^4.17.21
   prettier: ^2.7.1
   tsup: ^6.3.0
   typescript: ^4.8.4
@@ -24,10 +26,12 @@ dependencies:
   esbuild: 0.15.11
   fs-extra: 10.1.0
   joycon: 3.1.1
+  lodash: 4.17.21
 
 devDependencies:
   '@tsconfig/esm': 1.0.2
   '@types/fs-extra': 9.0.13
+  '@types/lodash': 4.14.186
   '@types/node': 18.11.0
   '@types/prettier': 2.7.1
   '@types/rc': 1.2.1
@@ -104,6 +108,10 @@ packages:
     resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
     dependencies:
       '@types/node': 18.11.0
+    dev: true
+
+  /@types/lodash/4.14.186:
+    resolution: {integrity: sha512-eHcVlLXP0c2FlMPm56ITode2AgLMSa6aJ05JTTbYbI+7EMkCEE5qk2E41d5g2lCVTqRe0GnnRFurmlCsDODrPw==}
     dev: true
 
   /@types/minimist/1.2.2:
@@ -872,6 +880,10 @@ packages:
   /lodash.sortby/4.7.0:
     resolution: {integrity: sha512-HDWXG8isMntAyRF5vZ7xKuEvOhT4AhlRt/3czTSjvGUxjYCBVRQY48ViDHyfYz9VIoBkW4TMGQNapx+l3RUwdA==}
     dev: true
+
+  /lodash/4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+    dev: false
 
   /loupe/2.3.4:
     resolution: {integrity: sha512-OvKfgCC2Ndby6aSTREl5aCCPTNIzlDfQZvZxNUrBrihDhL3xcrYegTblhmEiCrg2kKQz4XsFIaemE5BF4ybSaQ==}
